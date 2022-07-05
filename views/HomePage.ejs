@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Home</title>
+  <style>
+    /*navbar */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #5161ce;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #2f45d1;
+        }
+
+        .active {
+            background-color:  #04AA6D;
+        }
+        /*navbar */
+
+        /*homepage */
+
+        .home{
+            display:flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .IMG{
+            width:50%;
+            height: 420px;
+        }
+        h1{
+            color:#04AA6D;
+            font-weight: bold;
+            font-style: italic;
+        }
+        /*homepage */
+  </style>
+</head>
+
+<body>
+<ul>
+    <li><a style="float:right" class="active" href="/">Home</a></li>   
+    <li><a href="./services">Services</a></li>
+    <li><a href="./contact">Contact</a></li>
+</ul>
+<div class="home">
+    <h1>Welcome </h1>
+<img class="IMG" src="https://i.pinimg.com/564x/f2/20/2a/f2202aa9d7fc8a9b863028177779c6e6.jpg" alt="welcomePage"/>
+
+</div>
+</body>
+</html>

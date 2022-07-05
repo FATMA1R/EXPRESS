@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet"  href='../style.css'>
+    <style>
+    
+ /*  navbar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #5161ce;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #2f45d1;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+/*  navbar */
+
+.home{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.IMG{
+    width:50%;
+    height: 420px;
+}
+h1{
+    color:#046C95;
+    font-weight: bold;
+    font-style: italic;
+}
+/* =====home===== */
+
+/* ourServices */
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.container .box{
+    position: relative;
+    width: 350px; padding: 40px; background: #fff;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, .1);
+    border-radius: 4px;
+    margin: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+
+}
+.container .box .icon{
+    position: relative;
+    width: 80px; height: 80px;
+    color: #fff;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    font-size: 40px;
+    font-weight: 700;
+    transition: 1s;
+}
+.container .box:nth-child(1) .icon{
+ box-shadow: 0,0,0,0,#e9163e;
+ background: #e9163e;
+}
+.container .box:nth-child(1):hover .icon{
+    box-shadow: 0 0 0 400px #e9163e;
+}
+/*service name 2*/
+.container .box:nth-child(2) .icon{
+ box-shadow: 0,0,0,0,#23e629;
+ background: #23e629;
+}
+.container .box:nth-child(2):hover .icon{
+    box-shadow: 0 0 0 400px #23e629;
+}
+/*service name 3*/
+.container .box:nth-child(3) .icon{
+ box-shadow: 0,0,0,0, #2196f3;
+ background: #2196f3;
+}
+.container .box:nth-child(3):hover .icon{
+    box-shadow: 0 0 0 400px #2196f3;
+}
+
+.container .box .content{ position: relative; z-index: 1; transition: 0.5s;
+    
+     }
+.container .box:hover .content{
+    color: #fff;
+}
+.container .box .content h3{
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 0;
+}
+.container .box .content p{
+    margin: 0;
+    padding: 0;
+
+}
+#ref{
+    display: inline-block;
+    padding:  10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.container .box:before{
+    content: '';
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    background: rgba(255, 255, 255, .2);
+    z-index: 2;
+    pointer-events: none;
+
+}
+      /* ourServices */  
+          </style>
+    
+   
+</head>
+<body>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a style="float:right" class="active" href="./services">Services</a></li>
+        <li><a href="./contact">Contact</a></li>
+    </ul>
+    <div class="home">
+        <h1>Our Services</h1>
+    <img class="IMG" src="https://img.freepik.com/free-vector/freelance-outsoursing-concept-people-working-remotely-through-internet-idea-jop-independency-free-schedule-time-management-work-efficiency-vector-flat-illustration_613284-870.jpg?t=st=1656919781~exp=1656920381~hmac=f1e6c9dc7dd1b4d8f3015e218bd147cd06724ba4966bd7d7a09c8349ca5e3b4a&w=740" alt="welcomePage"/>
+    </div> 
+
+    <div style="margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    min-height: 50vh;
+    font-family:'Times New Roman, sans-serif'; ">
+    <div class="container" >
+        <div class="box">
+            <div class="icon">01</div>
+            <div class ="content" >
+                <h3>Service name</h3>
+                <p> Lorem ipsum dolor sit amet consectetur,
+                     adipisicing elit. Aperiam quis consectetur illum. 
+                     Repellat atque, explicabo sit asperiores dolore non ducimus
+                      labore repellendus vitae nobis minima, sapiente tempora quod ullam facere.</p>
+                      <a id="ref" href="#">Read more</a>
+
+            </div>
+        </div>    
+    </div>
+
+    <div class="container" >
+        <div class="box">
+            <div class="icon">02</div>
+            <div class ="content" >
+                <h3>Service name</h3>
+                <p> Lorem ipsum dolor sit amet consectetur,
+                     adipisicing elit. Aperiam quis consectetur illum. 
+                     Repellat atque, explicabo sit asperiores dolore non ducimus
+                      labore repellendus vitae nobis minima, sapiente tempora quod ullam facere.</p>
+                      <a id="ref" href="#">Read more</a>
+
+            </div>
+        </div>    
+    </div>
+
+    <div class="container" >
+        <div class="box">
+            <div class="icon">03</div>
+            <div class ="content" >
+                <h3>Service name</h3>
+                <p> Lorem ipsum dolor sit amet consectetur,
+                     adipisicing elit. Aperiam quis consectetur illum. 
+                     Repellat atque, explicabo sit asperiores dolore non ducimus
+                      labore repellendus vitae nobis minima, sapiente tempora quod ullam facere.</p>
+                      <a id="ref" href="#">Read more</a>
+
+            </div>
+        </div>    
+        </div>
+    </div>
+</div>
+    
+    
+   
+    
+</body>
+</html>

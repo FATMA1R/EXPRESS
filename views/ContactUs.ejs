@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <link rel="stylesheet"  href='./style.css'>
+    <style>
+     
+   /* navbar*/
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #5161ce;
+    }
+    
+    li {
+        float: left;
+    }
+    
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    li a:hover:not(.active) {
+        background-color: #2f45d1;
+    }
+    
+    .active {
+        background-color: #04AA6D;
+    }
+    /* ourServices */
+
+    /* =====Contact===== */
+    .home{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .IMG{
+        width:50%;
+        height: 420px;
+    }
+    h1{
+        color:#04AA6D;
+        font-weight: bold;
+        font-style: italic;
+    }
+    /* =====Contact===== */
+      </style>
+    
+</head>
+<body>
+<ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="./services">Services</a></li>
+        <li><a href="./contact" style="float:right" class="active">Contact</a></li>
+        
+    </ul>
+    <div class="home">
+        <h1>Contact Us</h1>
+        <img class="IMG" src="https://img.freepik.com/free-vector/contact-us-concept-landing-page_52683-12759.jpg?t=st=1656918113~exp=1656918713~hmac=d9569d8931c687de4c46cdef5d427296bb9a0075ca941311c1210aa5c6fbf269&w=740" alt="welcomePage"/>
+    </div> 
+</body>
+</html>
